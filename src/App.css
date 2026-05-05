@@ -28,11 +28,107 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f1a;
+  min-height: 100vh;
+  color: #e0e0e0;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.title {
+  font-size: 28px;
+  color: #00d4ff;
+  margin: 0;
+}
+
+.badge {
+  font-size: 13px;
+  background: #00d4ff22;
+  border: 1px solid #00d4ff55;
+  color: #00d4ff;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.add-btn {
+  background: #00d4ff22;
+  border: 1px solid #00d4ff66;
+  color: #00d4ff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-btn:hover { background: #00d4ff44; }
+
+.form-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  background: #1a1a2e;
+  border: 1px solid #00d4ff33;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.input {
+  background: #0f0f1a;
+  border: 1px solid #ffffff22;
+  color: #e0e0e0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.input:focus { border-color: #00d4ff88; }
+.input::placeholder { color: #555; }
+
+.submit-btn {
+  grid-column: 1 / -1;
+  background: #00d4ff;
+  color: #0f0f1a;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.submit-btn:hover { opacity: 0.85; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.status {
+  text-align: center;
+  padding: 60px;
+  color: #888;
+  font-size: 16px;
+}
+
+.error {
+  color: #ff6b6b;
+  text-align: center;
+  padding: 40px;
+}
+
